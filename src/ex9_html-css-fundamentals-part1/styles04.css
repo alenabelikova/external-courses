@@ -1,0 +1,49 @@
+div{
+    margin: 20px;
+}
+ .var1 {
+    background: #60B88D;
+    width: 90%;
+    height: 200px;
+    box-shadow: 5px 5px 0 #90CDAF, 10px 10px 0 #BFE3D1;
+}
+ .var2 {
+    background: #60B88D;
+	width: 90%;
+	height: 200px;
+	position: relative;
+}
+.var2::after, div.var2::before {
+	content: '';
+	position: absolute;
+	width: 100%; height: 100%;
+	z-index: -1;
+}
+.var2::after {
+    background: #90CDAF;
+    top: 5px; left: 5px;
+}
+.var2::before {
+	background: #BFE3D1;
+	top: 10px; left: 10px;
+}
+ .shadow {
+    background: #BFE3D1;
+    width: 90%;
+    height: 200px;
+    margin: 30px 10px 10px 30px;
+}
+.shadow__shadow {
+    position: relative;
+    background: #90CDAF;
+    width: 100%; height: 100%;
+    top: -5px; left: -5px;
+    margin: 0;
+}
+.shadow__shadow__var3 {
+    position: relative;
+    background: #60B88D;  
+    width: 100%; height: 100%;
+    top: -5px; left: -5px;
+    margin: 0;
+} 
