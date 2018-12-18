@@ -1,0 +1,35 @@
+.btn {
+    display: inline-block;
+    border: 1px solid #a1a1a1;
+    padding: 0.2em 1.8em;
+    margin: 30px;
+    font: bold 1.4em/2em Arial, Helvetica;
+    color: #555;
+    border-radius: .5em;
+    background: rgb(203, 203, 203) linear-gradient(rgb(224, 224, 224), rgb(175, 175, 175));
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.5), 0 0 0 5px #cbcbcb, 0 0 0 6.5px white, 0 0 0 8px #8c8c8c;
+}
+.btn:before {
+    float: left;
+    width: 1em;
+    text-align: center;
+    font-size: 1.4em;
+    color: gray;
+    margin: 0 0 0 -1em;
+    padding: 0 .2em;
+}
+.btn:after {
+    float: right;
+    width: 1em;
+    text-align: center;
+    font-size: 1.4em;
+    color: gray;
+    margin: 0 -1em 0 0;
+    padding: 0 .2em;
+}
+.btn::before {
+    content: "\2605";
+ }
+ .btn::after {
+     content: "\2605";
+ }
