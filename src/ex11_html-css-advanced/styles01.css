@@ -1,0 +1,16 @@
+.circle {
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    background-image: url(clouds.jpg);
+    border-radius: 50%;
+}
+
+.tree {
+    width: 650px;
+    height: 750px;
+    -webkit-mask-position-y: -100px;
+    background-image: url(clouds.jpg);
+    -webkit-mask-image: url(tree.png);
+    mask-image: url(tree.png);
+} 

@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    background: #1f2637;
+}
+#header {
+    flex: 100%;
+    height: 64px;
+    background-color: #2f364a;
+    color: #ffe;
+}
+#sidebar {
+    background-color: #1f2637;
+    width: 200px;
+}
+
+#sidebar .line {
+    height: 4px;
+    background-color: #19202e;
+    border-top: 1px solid #141824;
+    border-bottom: 1px solid #282f41;
+}
+
+.red-btn {
+    margin: 35px 20px;
+    width: 160px; height: 44px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+    font-family: 'Garamond', 'Font Awesome';
+    font-weight: bold;
+    text-align: center;
+    border: 0;
+    border-radius: 4px;
+    background-color: #f2795a;
+}
+
+.main-nav-btn {
+    font-family: 'Garamond', 'Font Awesome';
+    border: 0;
+    width: 100%;
+    height: 38px;
+    padding-left: 20px;
+    font-size: 13px;
+    line-height: 26px;
+    text-align: left;
+    background-color: #1f2637;
+    color: #78829d;
+}
+
+.main-nav-btn:hover {
+    background-color: #15a4fa;
+    color: #ffffff;
+}
+.main-nav-btn:focus {
+    background-color: #15a4fa;
+    color: #ffffff;
+}
+
+.categ-btn{
+    padding-left: 45px;
+    margin-bottom: -6px;
+}
+.categ-btn+label {
+    display: block;
+    border-radius: 50%;
+    background: red;
+    width: 6px;
+    height: 6px;
+    position: relative;
+    top:-17px;
+    Left:25px;
+}
+.categ-btn+label[for="mrt"] {
+    background: #e64c66;
+}
+.categ-btn+label[for="bol"] {
+    background: #ffab00;
+}
+.categ-btn+label[for="cn"] {
+    background: #00bfdd;
+}
+.categ-btn+label[for="nf"] {
+    background: #7874cf;
+}
+
+.history-item {
+    display: flex;
+    margin: 35px 20px;
+    font-family: 'Garamond', 'Font Awesome';
+    font-size: 12px;
+    line-height: 18px;
+    color: #545d74;
+}
+
+.history-item__icon {
+    margin-right: 10px;
+}
+.history-item__text a {
+    text-decoration: none;
+    color: #677b92;
+}
+
+#content {
+    background: #fff;
+    padding: 10px;
+    flex: 10%;
+    overflow: auto;
+}
+#footer {
+    flex: 100%;
+    height: 45px;
+    background: #181e2c;
+    color: #fff;
+    padding: 5px;
+    clear: left;
+}
+
+@import url("Garamond.ttf");
+
+@font-face {
+	font-family: 'Font Awesome';
+	src: url('Font Awesome/Font\ Awesome\ 5\ Brands-Regular-400.otf');
+    src: url('Font Awesome/Font\ Awesome\ 5\ Free-Regular-400.otf');
+    src: url('Font Awesome/Font\ Awesome\ 5\ Free-Solid-900.otf');
+	font-weight: 900;
+	font-style: normal;
+}

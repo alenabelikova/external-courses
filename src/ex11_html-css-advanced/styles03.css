@@ -1,0 +1,30 @@
+.field {
+    margin-top: 25px;
+    margin-bottom: -20px;
+}
+
+.field label {
+    display: block;
+    opacity: 0;
+    color: gray;
+    position: relative;
+    left: 0px;
+    top: -30px;
+    font-size: 10pt;
+    transition-property: opacity top color;
+    transition-duration: 1s;
+}
+
+.field input {
+    font-size: 12pt;
+}
+
+.field input:not(:placeholder-shown)+ label {
+    opacity: 1;
+    top: -40px;
+}
+
+.field input:focus+ label {
+
+    color: red;
+}
