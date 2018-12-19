@@ -1,60 +1,59 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="utf-8">
-  <title>Рамка вокруг текста</title>
-  <style>
-body {
-	margin: 30px;
-}
-.text {
-	background: #f05258;
-	padding: 5px;
-	color: white;
-}
-p.one {
-  	box-shadow: 0 0 0 1px white,
-				        0 0 0 2px #f05258;
-}
-p.two {
-	outline: 1px solid #f05258;
-	outline-offset: 1px;
-} 
-p.three {
-	border: 3px double white;
-}  
-p.four {
-	position: relative;
-}
-p.four::before {
-	content: '';
-	display: block;
-	border: 1px solid white;
-	height: calc(100% - 4px);
-	width: calc(100% - 4px);
-	margin: -4px;
-	position: absolute;
-} 
-p.five {
-  padding: 1px;
-	border: 1px solid #f05258;
-	background-clip: content-box;
-	display: block;
-	min-height: 27px;
-	width: 100%;
-	font: 16px/1.8 Arial;
-}
-p.five::before {
-	content: '.';
-	color: #f05258;
-}
-  </style>
+	<head>
+  	<meta charset="utf-8">
+  	<title>Рамка вокруг текста</title>
+  	<style>
+			body {
+				margin: 30px;
+			}
+			.text {
+				background: #f05258;
+				padding: 5px;
+				color: white;
+			}
+			p.one {
+				box-shadow: 0 0 0 1px white, 0 0 0 2px #f05258;
+			}
+			p.two {
+				outline: 1px solid #f05258;
+				outline-offset: 1px;
+			} 
+			p.three {
+				border: 3px double white;
+			}  
+			p.four {
+				position: relative;
+			}
+			p.four::before {
+				content: '';
+				display: block;
+				border: 1px solid white;
+				height: calc(100% - 4px);
+				width: calc(100% - 4px);
+				margin: -4px;
+				position: absolute;
+			} 
+			p.five {
+				padding: 1px;
+				border: 1px solid #f05258;
+				background-clip: content-box;
+				display: block;
+				min-height: 27px;
+				width: 100%;
+				font: 16px/1.8 Arial;
+			}
+			p.five::before {
+				content: '.';
+				color: #f05258;
+			}
+  	</style>
   </head>
-<body>
-  <p class="one text">Рамка вокруг текста 1</p>
-  <p class="two text">Рамка вокруг текста 2</p>
-  <p class="three text">Рамка вокруг текста 3</p>
-  <p class="four text">Рамка вокруг текста 4</p>
-  <p class="five text">Рамка вокруг текста 5</p>
-</body>
+	<body>
+  	<p class="one text">Рамка вокруг текста 1</p>
+		<p class="two text">Рамка вокруг текста 2</p>
+		<p class="three text">Рамка вокруг текста 3</p>
+		<p class="four text">Рамка вокруг текста 4</p>
+		<p class="five text">Рамка вокруг текста 5</p>
+	</body>
 </html>
