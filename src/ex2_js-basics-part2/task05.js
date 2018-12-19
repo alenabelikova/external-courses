@@ -1,7 +1,10 @@
-var maxNum = [5, 0, 40, 360, 18];
-for (var i = 0; i < maxNum.length; i++) {
-    if(maxNum[i] > maxNum[0]){
-        maxNum[0] = maxNum[i];
-    }
+var GetMax=function(arr){
+	var i;
+	var max=arr[0]
+	for (i=1; i<arr.length; i++)
+		if (arr[i-1]<arr[i])
+			max=arr[i];
+	console.log("Максимальное значение: "+max);
 }
-console.log (maxNum[0]);
+
+GetMax([2,5,65]);
